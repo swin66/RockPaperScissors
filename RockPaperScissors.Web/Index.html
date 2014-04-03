@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
+<head>
+    <title>Rock, Paper, Scissors in C#, WebApi and Angular by Paul Swindell</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/toaster.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rock, Paper, Scissors in C#, WebApi and Angular by Paul Swindell</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+
+            <div data-ng-controller="gameController" data-ng-cloak="true">
+                <div class="row">
+                    <div class="col-md-offset-7 col-md-1"><h2>Game</h2></div>
+                    <div class="col-md-offset-2 col-md-1"><h2>Score</h2></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        <h2>Player 1</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <img data-ng-src="Images/computer.png" width="200" height="200" />
+                    </div>
+                    <div class="col-md-3">
+                        <img data-ng-show="gameResult.Player1Move != null" data-ng-src="Images/{{gameResult.Player1Move}}.png" />
+                    </div>
+                    <div class="col-md-2" data-ng-cloak="true">
+                        <h2>{{player1Score}}</h2>
+                    </div>
+                </div>
+
+                <div class="row">&nbsp;</div>
+
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        <h2>Player 2</h2>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-large btn-primary" ng-model="game.Player2Move.PlayerType" btn-radio="'human'" data-ng-click="setPlayer2('human')">Human</button>
+                            <button type="button" class="btn btn-large btn-primary" ng-model="game.Player2Move.PlayerType" btn-radio="'computer'" data-ng-click="setPlayer2('computer')">Computer</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img data-ng-src="Images/{{game.Player2Move.PlayerType}}.png" width="200" height="200" />
+                        <div data-ng-show="game.Player2Move.PlayerType=='human'" class="btn-group" data-ng-cloak="true">
+                            <button data-ng-repeat="moveName in moveNames" type="button" class="btn btn-large btn-primary" ng-model="game.Player2Move.MoveName" btn-radio="moveName" ng-click="setHumanMove(moveName)">{{moveName}}</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img data-ng-show="gameResult.Player2Move != null" data-ng-src="Images/{{gameResult.Player2Move}}.png" />
+                    </div>
+                    <div class="col-md-2" data-ng-cloak="true">
+                        <h2>{{player2Score}}</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-8 col-md-4">
+                        <button class="btn btn-lg btn-info" data-ng-click="postGame(game);">Click to Play</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <toaster-container toaster-options="{'time-out': 5000}"></toaster-container>
+
+    <!-- Vendor Scripts -->
+    <script src="scripts/jquery-2.0.3.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/ui-bootstrap-0.10.0.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="scripts/toaster.js"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/app.js"></script>
+
+    <!-- Application -->
+    <script src="app/controllers/gameController.js"></script>
+
+</body>
+</html>
+
+

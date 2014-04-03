@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.Web", "RockPaperScissors.Web\RockPaperScissors.Web.csproj", "{36093211-27F4-415E-AA5A-01446BB7746D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.App", "RockPaperScissors.App\RockPaperScissors.App.csproj", "{A8CACEBF-876F-406C-ADE5-88BAAAC94622}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{04758B9C-C6BC-4198-8905-20873B67BDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.AcceptanceTests", "RockPaperScissors.AcceptanceTests\RockPaperScissors.AcceptanceTests.csproj", "{FC135B3E-367A-44F7-95F2-04099B7FFCE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C9662FE4-98E9-466B-8C62-B8E8CF89C52B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.UnitTests", "RockPaperScissors.UnitTests\RockPaperScissors.UnitTests.csproj", "{3F6269FF-0977-4270-AAD6-E0932DD0BBC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors.Contracts", "RockPaperScissors.Contracts\RockPaperScissors.Contracts.csproj", "{9F291827-F3E1-4845-BF19-492F21BA8B88}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36093211-27F4-415E-AA5A-01446BB7746D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36093211-27F4-415E-AA5A-01446BB7746D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36093211-27F4-415E-AA5A-01446BB7746D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36093211-27F4-415E-AA5A-01446BB7746D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CACEBF-876F-406C-ADE5-88BAAAC94622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CACEBF-876F-406C-ADE5-88BAAAC94622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CACEBF-876F-406C-ADE5-88BAAAC94622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CACEBF-876F-406C-ADE5-88BAAAC94622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC135B3E-367A-44F7-95F2-04099B7FFCE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC135B3E-367A-44F7-95F2-04099B7FFCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC135B3E-367A-44F7-95F2-04099B7FFCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC135B3E-367A-44F7-95F2-04099B7FFCE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6269FF-0977-4270-AAD6-E0932DD0BBC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6269FF-0977-4270-AAD6-E0932DD0BBC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6269FF-0977-4270-AAD6-E0932DD0BBC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6269FF-0977-4270-AAD6-E0932DD0BBC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F291827-F3E1-4845-BF19-492F21BA8B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F291827-F3E1-4845-BF19-492F21BA8B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F291827-F3E1-4845-BF19-492F21BA8B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F291827-F3E1-4845-BF19-492F21BA8B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC135B3E-367A-44F7-95F2-04099B7FFCE6} = {04758B9C-C6BC-4198-8905-20873B67BDEC}
+		{3F6269FF-0977-4270-AAD6-E0932DD0BBC2} = {04758B9C-C6BC-4198-8905-20873B67BDEC}
+	EndGlobalSection
+EndGlobal
